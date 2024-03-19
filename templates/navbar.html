@@ -1,0 +1,56 @@
+<header>
+  {% load static %}
+
+  <nav class="navbar | main-font sm:bg-[#E1EDE6] lg:py-[1em]">
+    <div
+      class="navbar-wrapper | flex flex-col justify-between lg:flex-row lg:max-w-[85%] lg:mx-auto"
+    >
+      <div class="navbar-logo-block flex justify-center py-[1em]">
+        <img
+          class="logo-image |"
+          src="{% static 'images/logo.svg' %}"
+          alt="logo-image"
+        />
+      </div>
+      <div
+        id="nav-bg"
+        class="navbar-links-block bg-[#E1EDE6] py-[1.5em] sm:py-0 sm:pb-[1.5em] lg:pb-0"
+      >
+        <div class="nav-container | max-w-[85%] mx-auto lg:flex">
+          <div
+            id="nav-inner"
+            class="navbar-inner | flex justify-between gap-[2em] sm:flex-col"
+          >
+            <img
+              id="close_x"
+              class="w-[1.25em] h-[1.25em] sm:hidden mt-[0.5em]"
+              src="{% static 'images/burger-icon.svg' %}"
+              alt="x"
+            />
+            <div
+              class="inside-info | sm:flex sm:justify-between flex-row-reverse sm:border-t-2 sm:border-[#C3D1C6] pt-[1em] lg:flex-row-reverse lg:gap-[3em] lg:border-0"
+            >
+              <div id="nav-cart" class="nav-cart |">
+                <img src="{% static 'images/shopping-cart.svg' %}" alt="" />
+              </div>
+              <ul
+                id="nav-links"
+                class="nav-links | flex flex-col hidden gap-[3em] mb-[5em] sm:flex sm:flex-row sm:mb-0 sm:w-[66%] sm:justify-between sm:text-[1.125rem] lg:flex-row"
+              >
+                <a href="#">
+                  <li class="nav-link |">Репродукции</li>
+                </a>
+                <a href="#">
+                  <li class="nav-link |">Новинки</li>
+                </a>
+                <a href="#">
+                  <li class="nav-link | lg:w-[4em]">О нас</li>
+                </a>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>

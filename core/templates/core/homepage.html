@@ -1,0 +1,231 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+
+<div class="main-wrapper | flex flex-col gap-[3em]">
+  <section class="hero-section |">
+    <div class="hero-container | max-w-[85%] mx-auto">
+      <div class="hero-inner | sm:flex sm:mt-[3em] lg:justify-between">
+        <div class="hero-picture | hidden sm:block md:w-[60%] lg:w-[47%]">
+          <img
+            class="w-full"
+            src="{% static 'images/hero-image.png' %}"
+            alt="hero-image"
+          />
+        </div>
+        <div
+          class="hero-text | flex flex-col gap-[1em] mt-[3.75em] sm:mt-0 md:w-[35%] md:justify-center lg:w-[45%]"
+        >
+          <h1 class="main-font main-title md:text-[2.75rem] lg:text-[3.75rem]">
+            Реплики картин от <span class="text-primary">Ink. House</span>
+          </h1>
+          <p class="subtext main-font text-[#86928B]">
+            Высокое качество отрисовки на плотной бумаге или льняном холсте.
+            Редкие произведения, доступные цены.
+          </p>
+          <div class="button-block | mt-[2em]">
+            <a class="text-primary border-2 py-[0.875em] px-[2.75em]" href="#"
+              >Продукция</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="products | main-font">
+    <div class="products-container | flex flex-col justify-between">
+      <div class="products-inner |">
+        <div class="title-and-tags | flex flex-col gap-[1.25em]">
+          <div class="title-block | w-[85%] mx-auto">
+            <h1 class="text-[1.5rem] main-font">Репродукции</h1>
+          </div>
+          <ul
+            class="tags | flex gap-[1.25em] main-font overflow-scroll ml-[7.5%] md:overflow-hidden"
+          >
+            <li
+              class="bg-[#376B44] text-white rounded-[7em] py-[0.6em] px-[2.25em]"
+            >
+              Франция
+            </li>
+            <li class="bg-[#D4E8D9] rounded-[7em] py-[0.6em] px-[2.25em]">
+              Германия
+            </li>
+            <li class="bg-[#D4E8D9] rounded-[7em] py-[0.6em] px-[1.25em]">
+              Англия
+            </li>
+          </ul>
+        </div>
+        <div
+          class="products-grid | grid grid-cols-1 mt-[1.5em] gap-[1.5em] max-w-[85%] mx-auto sm:grid-cols-2 md:grid-cols-3"
+        >
+          <div class="product-item | bg-[#E1EDE6] py-[1.5em]">
+            <div class="product-container | w-[90%] mx-auto">
+              <div class="product-image |">
+                <img
+                  class="w-[100%]"
+                  src="{% static 'images/amur_hunt.png' %}"
+                  alt="product-image"
+                />
+              </div>
+              <div class="product-body | py-[1em]">
+                <p class="product-author | text-[#86928B]">Марсель Руссо</p>
+                <h1 class="product-title | text-[1.5rem]">Охота Амура</h1>
+
+                <p class="material |">Холст, масло (50х80)</p>
+
+                <div class="price-n-buy | mt-[1.25em]">
+                  <p class="price | text-primary text-[1.25rem]">14 500 руб</p>
+                  <div class="button-block | mt-[2em] flex text-center">
+                    <a
+                      class="text-primary border-2 border-[#598D66] w-full py-[0.875em] px-[2.75em]"
+                      href="#"
+                      >Продукция</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product-item | bg-[#E1EDE6] py-[1.5em]">
+            <div
+              class="product-container | w-[90%] mx-auto flex flex-col justify-between"
+            >
+              <div class="product-image |">
+                <img
+                  class="w-[100%]"
+                  src="{% static 'images/woman.png' %}"
+                  alt="product-image"
+                />
+              </div>
+              <div class="product-body | py-[1em]">
+                <p class="product-author | text-[#86928B]">Анри Селин</p>
+                <h1 class="product-title | text-[1.5rem]">Дама с собачкой</h1>
+
+                <p class="material |">Акрил, бумага (50х80)</p>
+
+                <div class="price-n-buy | mt-[1.25em]">
+                  <p class="price | text-primary text-[1.25rem]">16 500 руб</p>
+                  <div class="button-block | mt-[2em] flex text-center">
+                    <a
+                      class="text-primary border-2 border-[#598D66] w-full py-[0.875em] px-[2.75em]"
+                      href="#"
+                      >Продукция</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product-item | bg-[#E1EDE6] py-[1.5em]">
+            <div
+              class="product-container | w-[90%] mx-auto flex flex-col justify-between"
+            >
+              <div class="product-image |">
+                <img
+                  class="w-[100%]"
+                  src="{% static 'images/procedure.png' %}"
+                  alt="product-image"
+                />
+              </div>
+              <div class="product-body | py-[1em]">
+                <p class="product-author | text-[#86928B]">Франсуа Дюпон</p>
+                <h1 class="product-title | text-[1.5rem]">Процедура</h1>
+
+                <p class="material |">Цветная литография (40х60)</p>
+
+                <div class="price-n-buy | mt-[1.25em]">
+                  <p class="price | text-primary text-[1.25rem]">20 000 руб</p>
+                  <div class="button-block | mt-[2em] flex text-center">
+                    <a
+                      class="text-primary border-2 border-[#598D66] w-full py-[0.875em] px-[2.75em]"
+                      href="#"
+                      >Продукция</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section
+    class="new-collections | bg-[url('/static/images/collections.png')] bg-cover bg-top w-full py-[3em] lg:py-[10em]"
+  >
+    <div class="new-collections-container | max-w-[85%] mx-auto">
+      <div class="new-collections-wrapper | flex flex-col gap-[2em]">
+        <div class="title-block | flex items-center lg:gap-[1.5em]">
+          <img src="{% static 'images/gold_star.svg' %}" alt="" />
+          <h1
+            class="title | main-font text-[1.5rem] text-white leading-5 lg:text-[2.5rem] lg:max-w-[50%] lg:leading-10"
+          >
+            Новая коллекция французских авторов
+          </h1>
+        </div>
+        <div class="text-body | flex flex-col gap-[2em]">
+          <p class="main-font text-white lg:max-w-[50%]">
+            Сложно сказать, почему акционеры крупнейших компаний призывают нас
+            к новым свершениям, которые, в свою очередь, должны быть
+            заблокированы в рамках своих собственных рациональных ограничений.
+          </p>
+          <p class="main-font text-white lg:max-w-[50%]">
+            Принимая во внимание показатели успешности, граница обучения кадров
+            предопределяет высокую востребованность направлений прогрессивного
+            развития.
+          </p>
+        </div>
+        <div class="button-block | mt-[2em] flex text-center">
+          <a
+            class="text-black bg-[#EEDB6D] w-full text-[1.125rem] font-normal py-[0.875em] px-[2.75em]"
+            href="#"
+            >Ознакомиться</a
+          >
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="our-team | py-[3.125em]">
+    <div class="our-team-container| max-w-[85%] mx-auto">
+      <div
+        class="our-team-wrapper | flex flex-col gap-[2em] lg:flex-row lg:justify-between lg:items-center"
+      >
+        <div class="our-team-image-block | lg:w-[45%]">
+          <img
+            class="w-[75%] lg:w-full"
+            src="{% static 'images/our_team.png' %}"
+            alt=""
+          />
+        </div>
+        <div
+          class="our-team-description-block | flex flex-col gap-[1.25em] lg:w-[45%] lg:justify-center"
+        >
+          <h1
+            class="title | main-font text-[1.5rem] text-black leading-5 md:text-[2rem] lg:text-[2.5rem]"
+          >
+            Наша команда
+          </h1>
+          <p class="main-font text-black md:text-[1.125rem]">
+            Значимость этих проблем настолько очевидна, что базовый вектор
+            развития позволяет оценить значение экспериментов, поражающих
+            по своей масштабности и грандиозности. Мы вынуждены отталкиваться
+            от того, что консультация с широким активом.
+          </p>
+          <div class="team-profiles | flex gap-[1.875em]">
+            <a href="#">
+              <img src="{% static 'images/alice.jpg' %}" alt="" />
+            </a>
+            <a href="#">
+              <img src="{% static 'images/jake.jpg' %}" alt="" />
+            </a>
+            <a href="#">
+              <img src="{% static 'images/kent.jpg' %}" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+{% endblock content %}
