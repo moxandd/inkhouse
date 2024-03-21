@@ -57,20 +57,24 @@
         <div
           class="products-grid | grid grid-cols-1 mt-[1.5em] gap-[1.5em] max-w-[85%] mx-auto sm:grid-cols-2 md:grid-cols-3"
         >
+          <!-- Product object -->
+          {% for product in products %}
           <div class="product-item | bg-[#E1EDE6] py-[1.5em]">
             <div class="product-container | w-[90%] mx-auto">
               <div class="product-image |">
                 <img
                   class="w-[100%]"
-                  src="{% static 'images/amur_hunt.png' %}"
+                  src="{{ product.image.url }}"
                   alt="product-image"
                 />
               </div>
               <div class="product-body | py-[1em]">
-                <p class="product-author | text-[#86928B]">Марсель Руссо</p>
-                <h1 class="product-title | text-[1.5rem]">Охота Амура</h1>
+                <p class="product-author | text-[#86928B]">
+                  {{product.author}}
+                </p>
+                <h1 class="product-title | text-[1.5rem]">{{product.title}}</h1>
 
-                <p class="material |">Холст, масло (50х80)</p>
+                <p class="material |">{{product.description}}</p>
 
                 <div class="price-n-buy | mt-[1.25em]">
                   <p class="price | text-primary text-[1.25rem]">14 500 руб</p>
@@ -85,7 +89,10 @@
               </div>
             </div>
           </div>
-          <div class="product-item | bg-[#E1EDE6] py-[1.5em]">
+          {% endfor %}
+          <!-- Product object end -->
+
+          <!-- <div class="product-item | bg-[#E1EDE6] py-[1.5em]">
             <div
               class="product-container | w-[90%] mx-auto flex flex-col justify-between"
             >
@@ -144,7 +151,7 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
