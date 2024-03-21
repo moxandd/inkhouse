@@ -1,0 +1,69 @@
+{% extends 'base.html' %}{% load static %} {% block content %}
+
+<div class="login-main |">
+  <div
+    class="login-container | max-w-[85%] mx-auto sm:max-w-[70%] lg:max-w-full"
+  >
+    <div
+      class="login-inner | pt-[2em] pb-[4em] sm:py-[10em] lg:flex lg:w-full lg:pt-0 lg:pb-0"
+    >
+      <div class="login-main-block | lg:px-[4em] lg:pb-[8em]">
+        <div class="hero-text | flex flex-col gap-[1em] mt-[3.75em]">
+          <h1 class="main-font main-title md:text-[2.35rem] lg:text-[3.75rem]">
+            Добро пожаловать в <span class="text-primary">Ink. House</span>
+          </h1>
+        </div>
+
+        <div class="login-form-block |">
+          <form action="" method="POST" class="login-form | text-[#598D66]">
+            <label for="username">Вход</label><br />
+            <input
+              class="bg-[#E1EDE6] w-full px-[0.625em] py-[0.4em] rounded-lg placeholder-[#598D66] mt-[0.25em]"
+              type="text"
+              placeholder="Имя пользователя"
+              name="username"
+            />
+            <input
+              class="bg-[#E1EDE6] w-full px-[0.625em] py-[0.4em] rounded-lg mt-[0.5em] placeholder-[#598D66]"
+              type="password"
+              placeholder="Пароль"
+            />
+            <div
+              class="underinputs | flex flex-col text-center gap-[0.5em] mt-[1.25em] items-center"
+            >
+              <a class="underline text-[#598D66] text-[0.9rem]" href="#"
+                >Забыли пароль?</a
+              >
+
+              <button
+                class="form-btn | bg-[#598D66] py-[0.5em] px-[1.25em] text-white rounded-[5em] w-full"
+                type="submit"
+              >
+                Вход
+              </button>
+            </div>
+          </form>
+        </div>
+        <div
+          class="divider-block | flex text-[#598D66] justify-center items-center mt-[1.5em] text-xl gap-[0.5em]"
+        >
+          <div class="line | h-[1px] w-[40%] border-2 border-[#598D66]"></div>
+          <p>или</p>
+          <div class="line | h-[1px] w-[40%] border-2 border-[#598D66]"></div>
+        </div>
+        <div class="registration-link | mt-[1.5em] flex flex-col items-center">
+          <a
+            class="text-primary border-2 py-[0.875em] px-[2.75em] w-full text-center"
+            href="#"
+            >Регистрация</a
+          >
+        </div>
+      </div>
+      <div
+        class="login-image-block | bg-[url('/static/images/login-image.png')] bg-cover w-full hidden lg:block"
+      ></div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

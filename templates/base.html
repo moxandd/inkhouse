@@ -21,11 +21,12 @@
   </head>
 
   <body class="bg-white font-medium">
-    <div class="">
-      {% include 'navbar.html' %} {% block content %} {% endblock content %}
+    <div class="uber-main | min-h-[100vh] flex flex-col justify-between">
+      <div class="main | min-h-[100%]">
+        {% include 'navbar.html' %} {% block content %} {% endblock content %}
+      </div>
+      {% include 'footer.html' %}
     </div>
-    {% include 'footer.html' %}
-
     <script defer src="{% static 'js/main.js' %}"></script>
   </body>
 </html>
