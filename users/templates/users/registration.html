@@ -1,0 +1,89 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+<div class="registration-main |">
+  <div
+    class="registration-container | max-w-[85%] mx-auto sm:max-w-[70%] lg:max-w-full"
+  >
+    <div
+      class="registration-inner | pt-[2em] pb-[4em] sm:py-[10em] lg:flex lg:w-full lg:pt-0 lg:pb-0"
+    >
+      <div class="registration-main-block | lg:px-[4em] lg:pb-[8em]">
+        <div class="hero-text | flex flex-col gap-[1em] mt-[3.75em]">
+          <h1 class="main-font main-title md:text-[2.35rem] lg:text-[3.75rem]">
+            Регистрация в <span class="text-primary">Ink. House</span>
+          </h1>
+        </div>
+
+        <div class="registration-form-block |">
+          <form
+            action=""
+            method="POST"
+            class="registration-form | text-[#598D66]"
+          >
+            <label class="text-[0.725rem]" for="username"
+              >Придумайте имя пользователя</label
+            ><br />
+            <input
+              class="bg-[#E1EDE6] w-full px-[0.625em] py-[0.4em] rounded-lg placeholder-[#598D66] mt-[0.25em]"
+              type="text"
+              placeholder="Имя пользователя"
+              name="username"
+            />
+            <label class="text-[0.725rem]" for="email">Электронная почта</label
+            ><br />
+            <input
+              class="bg-[#E1EDE6] w-full px-[0.625em] py-[0.4em] rounded-lg placeholder-[#598D66]"
+              type="email"
+              name="email"
+              placeholder="Email"
+            />
+            <input
+              class="bg-[#E1EDE6] w-full px-[0.625em] py-[0.4em] rounded-lg mt-[1.25em] placeholder-[#598D66]"
+              type="password"
+              placeholder="Пароль"
+            />
+            <input
+              class="bg-[#E1EDE6] w-full px-[0.625em] py-[0.4em] rounded-lg mt-[0.5em] placeholder-[#598D66]"
+              type="password"
+              placeholder="Повторите пароль"
+            />
+            <div
+              class="underinputs | flex flex-col text-center gap-[0.5em] mt-[1.25em] items-center"
+            >
+              <div
+                class="agree-checkbox-block | flex items-center gap-[0.25em]"
+              >
+                <label for="agree-terms">Я принимаю условия соглашения</label>
+                <input class="mt-[0.25em]" type="checkbox" name="agree-terms" />
+              </div>
+
+              <button
+                class="form-btn | bg-[#598D66] py-[0.5em] px-[1.25em] text-white rounded-[5em] w-full"
+                type="submit"
+              >
+                Создать учетную запись
+              </button>
+            </div>
+          </form>
+        </div>
+        <div
+          class="divider-block | flex text-[#598D66] justify-center items-center mt-[1.5em] text-xl gap-[0.5em]"
+        >
+          <div class="line | h-[1px] w-[40%] border-2 border-[#598D66]"></div>
+          <p>или</p>
+          <div class="line | h-[1px] w-[40%] border-2 border-[#598D66]"></div>
+        </div>
+        <div class="login-link | mt-[1.5em] flex flex-col items-center">
+          <a
+            class="text-primary border-2 py-[0.875em] px-[2.75em] w-full text-center"
+            href="{% url 'login-page' %}"
+            >Войти в аккаунт</a
+          >
+        </div>
+      </div>
+      <div
+        class="registration-image-block | bg-[url('/static/images/registration-image.png')] bg-cover w-full hidden lg:block"
+      ></div>
+    </div>
+  </div>
+</div>
+{% endblock %}
