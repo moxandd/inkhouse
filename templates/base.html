@@ -23,7 +23,9 @@
   <body class="bg-white font-medium">
     <div class="uber-main | min-h-[100vh] flex flex-col justify-between">
       <div class="main | min-h-[100%]">
-        {% include 'navbar.html' %} {% block content %} {% endblock content %}
+        {% include 'navbar.html' %} {% block content %} {% if page_name %}
+        <h1>PAGE NAME IS HERE</h1>
+        {% endif %}{% endblock content %}
       </div>
       {% include 'footer.html' %}
     </div>

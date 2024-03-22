@@ -16,6 +16,7 @@
 
         <div class="login-form-block |">
           <form action="" method="POST" class="login-form | text-[#598D66]">
+            {% csrf_token %}
             <label for="username">Вход</label><br />
             <input
               class="bg-[#E1EDE6] w-full px-[0.625em] py-[0.4em] rounded-lg placeholder-[#598D66] mt-[0.25em]"
@@ -27,6 +28,7 @@
               class="bg-[#E1EDE6] w-full px-[0.625em] py-[0.4em] rounded-lg mt-[0.5em] placeholder-[#598D66]"
               type="password"
               placeholder="Пароль"
+              name="password"
             />
             <div
               class="underinputs | flex flex-col text-center gap-[0.5em] mt-[1.25em] items-center"
@@ -45,6 +47,9 @@
               </button>
             </div>
           </form>
+          <!-- {% for message in messages%}
+          <p class="text-orange-400">{{message}}</p>
+          {% endfor %} -->
         </div>
         <div
           class="divider-block | flex text-[#598D66] justify-center items-center mt-[1.5em] text-xl gap-[0.5em]"
