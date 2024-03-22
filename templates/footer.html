@@ -7,11 +7,13 @@
         class="footer-main-block | grid grid-cols-2 gap-[2em] border-b-2 border-[#C3D1C6] py-[1em] lg:grid-cols-4 lg:w-[80%] lg:border-0"
       >
         <div class="logo-and-number | flex flex-col">
-          <img
-            class="max-w-[8em]"
-            src="{% static 'images/logo.svg' %}"
-            alt=""
-          />
+          <a href="{% url 'home' %}">
+            <img
+              class="max-w-[8em]"
+              src="{% static 'images/logo.svg' %}"
+              alt=""
+            />
+          </a>
           <div class="number | mt-[1.125em]">
             <p class="number-text |">+7 (999) 543-54-54</p>
             <p class="number-subtext | text-[#86928B]">Мастерская</p>

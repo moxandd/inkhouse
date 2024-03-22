@@ -6,11 +6,13 @@
       class="navbar-wrapper | flex flex-col justify-between lg:flex-row lg:max-w-[85%] lg:mx-auto"
     >
       <div class="navbar-logo-block flex justify-center py-[1em]">
-        <img
-          class="logo-image |"
-          src="{% static 'images/logo.svg' %}"
-          alt="logo-image"
-        />
+        <a href="{% url 'home' %}">
+          <img
+            class="logo-image |"
+            src="{% static 'images/logo.svg' %}"
+            alt="logo-image"
+          />
+        </a>
       </div>
       <div
         id="nav-bg"
@@ -45,6 +47,9 @@
                 </a>
                 <a href="#">
                   <li class="nav-link | lg:w-[4em]">О нас</li>
+                </a>
+                <a href="{% url 'login-page' %}">
+                  <li class="nav-link | lg:w-[4em]">Логин</li>
                 </a>
               </ul>
             </div>

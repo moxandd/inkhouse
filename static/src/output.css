@@ -821,12 +821,20 @@ video {
   background-image: url('/static/images/registration-image.png');
 }
 
+.bg-\[url\(\'\/static\/images\/password-recovery\.png\'\)\] {
+  background-image: url('/static/images/password-recovery.png');
+}
+
 .bg-cover {
   background-size: cover;
 }
 
 .bg-top {
   background-position: top;
+}
+
+.bg-center {
+  background-position: center;
 }
 
 .px-\[0\.625em\] {
@@ -954,6 +962,14 @@ video {
 
 .leading-5 {
   line-height: 1.25rem;
+}
+
+.leading-10 {
+  line-height: 2.5rem;
+}
+
+.leading-\[0rem\] {
+  line-height: 0rem;
 }
 
 .text-\[\#598D66\] {
@@ -1146,6 +1162,22 @@ video {
 
   .lg\:w-full {
     width: 100%;
+  }
+
+  .lg\:w-\[70\%\] {
+    width: 70%;
+  }
+
+  .lg\:w-\[30\%\] {
+    width: 30%;
+  }
+
+  .lg\:w-\[55\%\] {
+    width: 55%;
+  }
+
+  .lg\:w-\[50\%\] {
+    width: 50%;
   }
 
   .lg\:max-w-\[50\%\] {
