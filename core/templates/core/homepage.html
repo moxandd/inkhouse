@@ -38,21 +38,38 @@
           <div class="title-block | w-[85%] mx-auto">
             <h1 class="text-[1.5rem] main-font">Репродукции</h1>
           </div>
-          <ul
-            class="tags | flex gap-[1.25em] main-font overflow-scroll ml-[7.5%] md:overflow-hidden"
-          >
-            <li
-              class="bg-[#376B44] text-white rounded-[7em] py-[0.6em] px-[2.25em]"
+
+          <!-- HERE -->
+
+          <!-- <form action="" method="get">
+            <!-- <button type="submit" name="category" value="all">All</button> -->
+
+          <form action="" method="GET">
+            <ul
+              class="tags | flex gap-[1.25em] main-font overflow-scroll ml-[7.5%] md:overflow-hidden"
             >
-              Франция
-            </li>
-            <li class="bg-[#D4E8D9] rounded-[7em] py-[0.6em] px-[2.25em]">
+              {% for category in categories%}
+              <li>
+                <button
+                  type="submit"
+                  name="category"
+                  value="{{category.id}}"
+                  class="bg-[#376B44] text-white rounded-[7em] py-[0.6em] px-[2.25em]"
+                >
+                  {{category.title}}
+                </button>
+              </li>
+              {% endfor %}
+              <!-- <li class="bg-[#D4E8D9] rounded-[7em] py-[0.6em] px-[2.25em]">
               Германия
             </li>
             <li class="bg-[#D4E8D9] rounded-[7em] py-[0.6em] px-[1.25em]">
               Англия
-            </li>
-          </ul>
+            </li> -->
+            </ul>
+          </form>
+
+          <!-- HERE END -->
         </div>
         <div
           class="products-grid | grid grid-cols-1 mt-[1.5em] gap-[1.5em] max-w-[85%] mx-auto sm:grid-cols-2 md:grid-cols-3"
