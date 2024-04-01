@@ -1,4 +1,5 @@
-![inkhouselogosvg]([file:///C:/Users/inger/Downloads/ink_house_logo.svg?msec=1711986179129](https://i.postimg.cc/W34s3Vcj/ink-house-logo.png))
+<p align="center"><img src="https://i.postimg.cc/W34s3Vcj/ink-house-logo.png" /></p>
+
 
 ### Inkhouse: Replica Art E-commerce Team Portfolio Project
 
