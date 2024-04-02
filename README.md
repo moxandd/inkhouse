@@ -1,7 +1,7 @@
 <p align="center"><img src="https://i.postimg.cc/W34s3Vcj/ink-house-logo.png" /></p>
 
 
-### Inkhouse: Replica Art E-commerce Team Portfolio Project
+### Inkhouse: Replica Art E-commerce store, Team Portfolio Project
 
 Inkhouse is a full-stack web application built collaboratively by two devlopers and one designer to showcase our combined skills in modern e-commerce development. It highlights our proficiency in working effectively as a team and using a range of web development technologies.
 
