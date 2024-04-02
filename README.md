@@ -3,6 +3,8 @@
 
 ### Inkhouse: Replica Art E-commerce Team Portfolio Project
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 Inkhouse is a full-stack web application built collaboratively by two devlopers and one designer to showcase our combined skills in modern e-commerce development. It highlights our proficiency in working effectively as a team and using a range of web development technologies.
 
 ## Key Features
