@@ -1,7 +1,5 @@
 node_modules
 .venv
 __pycache__/
-output.css
 static/CACHE/css
-CACHE/css/
 output.css
