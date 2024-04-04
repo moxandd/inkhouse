@@ -35,17 +35,17 @@ Inkhouse is a full-stack web application built collaboratively by two devlopers 
 
 - **Python 3.10 - Python 3.12:**
 
-Type and run the follwoing commands in the terminal:
+Type and run the following commands in the terminal:
 
-1. `python -m pip install --upgrade pip`
+1. python -m venv .venv
   
-2. `python -m pip install django`
+2. .venv/scripts/activate
   
-3. `django-admin startproject <project's name>`
+3. pip install -r requirements.txt
   
-4. `python -m pip freeze > requirements.txt`
+4. npm install
   
-5. `python manage.py runserver`
+5. python manage.py runserver
   
 
 ## Feedback and Contact
