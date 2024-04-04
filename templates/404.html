@@ -1,0 +1,12 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+<div class="flex justify-between mx-68">
+  <div>
+    <h1 class="text-gray-700 text-6xl font-bold">Страница <span class="text-green-500">не найдена</span></h1>
+    <p class="text-xl font-medium mb-84">похоже на эту страницу<br><span class="text-green-500">не существует</span></p>
+    <a class="text-green-500 text-xl font-medium py-3 px-14 whitespace-nowrap border-3 border-green-500 rounded-2xl">на домашнюю страницу</a>
+  </div>
+  <div>
+    <img src="/magnifying_glass.svg" id="glass">
+  </div>
+</div>
+{% endblock content %}
