@@ -1,10 +1,10 @@
 {% extends 'base.html' %} {% load static %} {% block content %}
 
-<div class="main-wrapper | flex flex-col gap-[3em]">
-  <section class="hero-section |">
-    <div class="hero-container | max-w-[85%] mx-auto">
+<div class="main-wrapper | flex flex-col gap-[3em] 2xl:max-w-[1280px] mx-auto">
+  <section class="hero-section | mx-auto">
+    <div class="hero-container | max-w-[95%] mx-auto">
       <div class="hero-inner | sm:flex sm:mt-[3em] lg:justify-between">
-        <div class="hero-picture | hidden sm:block md:w-[60%] lg:w-[47%]">
+        <div class="hero-picture | hidden sm:block md:max-w-[60%]">
           <img
             class="w-full"
             src="{% static 'images/hero-image.png' %}"
@@ -35,7 +35,7 @@
     <div class="products-container | flex flex-col justify-between">
       <div class="products-inner |">
         <div class="title-and-tags | flex flex-col gap-[1.25em]">
-          <div class="title-block | w-[85%] mx-auto">
+          <div class="title-block | max-w-[85%] mx-auto">
             <h1 class="text-[1.5rem] main-font">Репродукции</h1>
           </div>
 
@@ -72,12 +72,12 @@
           <!-- HERE END -->
         </div>
         <div
-          class="products-grid | grid grid-cols-1 mt-[1.5em] gap-[1.5em] max-w-[85%] mx-auto sm:grid-cols-2 md:grid-cols-3"
+          class="products-grid | grid grid-cols-1 mt-[1.5em] gap-[1.5em] max-w-[85%] mx-auto sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
         >
           <!-- Product object -->
           {% for product in products %}
           <div class="product-item | bg-[#E1EDE6] py-[1.5em]">
-            <div class="product-container | w-[90%] mx-auto">
+            <div class="product-container | max-w-[90%] mx-auto">
               <div class="product-image |">
                 <img
                   class="w-[100%]"
@@ -113,7 +113,7 @@
   </section>
 
   <section
-    class="new-collections | bg-[url('/static/images/collections.png')] bg-cover bg-top w-full py-[3em] lg:py-[10em]"
+    class="new-collections | bg-[url('/static/images/collections.png')] bg-cover bg-top w-full py-[3em] lg:py-[10em] mx-auto"
   >
     <div class="new-collections-container | max-w-[85%] mx-auto">
       <div class="new-collections-wrapper | flex flex-col gap-[2em]">
@@ -148,12 +148,12 @@
     </div>
   </section>
 
-  <section class="our-team | py-[3.125em]">
+  <section class="our-team | py-[3.125em] mx-auto">
     <div class="our-team-container| max-w-[85%] mx-auto">
       <div
         class="our-team-wrapper | flex flex-col gap-[2em] lg:flex-row lg:justify-between lg:items-center"
       >
-        <div class="our-team-image-block | lg:w-[45%]">
+        <div class="our-team-image-block | lg:max-w-[45%]">
           <img
             class="w-[75%] lg:w-full"
             src="{% static 'images/our_team.png' %}"
