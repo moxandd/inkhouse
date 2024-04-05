@@ -25,5 +25,6 @@ urlpatterns = [
     path('users/', include('users.urls'))
 ]
 
+handler404 = 'inkhouse.views.handler404'
 
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
