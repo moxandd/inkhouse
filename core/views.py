@@ -16,3 +16,9 @@ def home_view(request):
 
 
     return render(request, 'core/homepage.html', context={'page_name': page_name, 'products': products, 'categories': categories})
+
+def product_view(request, pk):
+
+    product = Product.objects.get(id=pk)
+
+    return render(request, 'core/product.html', context={'product': product})

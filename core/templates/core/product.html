@@ -1,0 +1,37 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+
+<div class="product-page-wrapper | my-[3em]">
+  <div class="product-page-container | max-w-[85%] mx-auto">
+    <div class="product-page-inner |">
+      <div class="product-primary-block">
+        <div class="product-image-block | p-[1em] bg-[#E1EDE6]">
+          <div
+            class="product-image-container | min-h-[20rem] bg-center bg-no-repeat bg-cover"
+            style="background-image: url('{{product.image.url}}');"
+          ></div>
+        </div>
+        <div class="product-properties-block |">
+          <div class="product-text-info |">
+            <div class="product-title |">{{product.title}}</div>
+            <div class="product-author |">Марсель Руссо</div>
+            <div class="product-country |">Франция</div>
+            <div class="product-materials |">Холст, масло</div>
+            <div class="product-size |">(50х80)</div>
+          </div>
+          <div class="product-add-block |">
+            <div class="product-testimonials |">
+              <p>Отзывы картин</p>
+              <div class="stars-rating |"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="product-sub-block |">
+        <div class="product-description-block |"></div>
+        <div class="product-info-block |"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
